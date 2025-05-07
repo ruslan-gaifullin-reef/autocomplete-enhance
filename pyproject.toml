@@ -1,0 +1,31 @@
+[project]
+name = "autocomplete-enhance"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Your Name",email = "you@example.com"}
+]
+packages = [
+  { include = "autocomplete_enhance", from = "src" }
+]
+
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas (>=2.2.3,<3.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "numpy (>=2.2.5,<3.0.0)",
+    "argcomplete (>=3.6.2,<4.0.0)",
+]
+
+#[tool.poetry.scripts]
+[project.scripts]
+sample-heavy = "autocomplete_enhance.sample_cli.heavy:main"
+sample-greet = "autocomplete_enhance.sample_cli.greet:main"
+sample-testcli = "autocomplete_enhance.sample_cli.testcli:main"
+sample-testcli2 = "autocomplete_enhance.sample_cli.testcli2:main"
+sample-describe-github-user = "autocomplete_enhance.sample_cli.describe_github_user:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
