@@ -1,0 +1,34 @@
+{
+    "description": null,
+    "arguments": [
+        {
+            "option_strings": [
+                "--organization"
+            ],
+            "dest": "organization",
+            "help": "GitHub organization",
+            "required": false,
+            "nargs": null,
+            "default": null,
+            "type": null,
+            "choices": null,
+            "metavar": null,
+            "completer": null
+        },
+        {
+            "option_strings": [
+                "--member"
+            ],
+            "dest": "member",
+            "help": "GitHub member",
+            "required": false,
+            "nargs": null,
+            "default": null,
+            "type": null,
+            "choices": null,
+            "metavar": null,
+            "completer": "github_org_members"
+        }
+    ],
+    "subparsers": {}
+}
